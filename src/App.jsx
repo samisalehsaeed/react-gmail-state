@@ -52,11 +52,15 @@ function App() {
                 onChange={() => handleCheckboxChange(index)}
                 className="select-checkbox"
                 type="checkbox"
-                checked={email.selected}
+                checked={email.read}
               />
             </div>
             <div className="star">
-              <input className="star-checkbox" type="checkbox" />
+              <input
+                className="star-checkbox"
+                type="checkbox"
+                checked={email.starred}
+              />
             </div>
             <div>
               <div className="sender">{email.sender}</div>
